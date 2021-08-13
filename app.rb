@@ -18,5 +18,10 @@ enable :sessions #In Sinatra, session is a Hash, and you can set values for its 
     @player_2 = session[:player_2]
     erb:play
   end
+
+ post '/attack' do
+  @player_2 = session[:player_2]
+    erb:attack
+  end
   
 end 
