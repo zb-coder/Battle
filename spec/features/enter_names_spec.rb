@@ -7,7 +7,7 @@ feature "Enter names" do
     click_button 'Submit'
 
     save_and_open_page # will save the web page and open the browser to display it
-    
+
     expect(page).to have_content 'Zainab vs. Graeme'
   end 
 end 
